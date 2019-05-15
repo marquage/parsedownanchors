@@ -1,11 +1,7 @@
 # ParsedownAnchors
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 This tiny extension is part of the larger markdown-driven note-taking site. Although it is primarily aimed for building table of contents, this package accomplishes two things only:
 
