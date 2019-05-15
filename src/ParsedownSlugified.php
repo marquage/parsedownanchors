@@ -3,23 +3,11 @@
 namespace Marquage\ParsedownAnchors;
 
 use ParsedownExtra;
-use Exception;
 use Cocur\Slugify\Slugify;
 
 class ParsedownSlugified extends ParsedownExtra
 {
-    private $used = [];
-
-    /**
-     * ParsedownExtended constructor.
-     */
-    public function __construct()
-    {
-        try {
-            parent::__construct();
-        } catch (Exception $e) {
-        }
-    }
+    protected $used = [];
 
     /**
      * Overrides both Parsedown & Parsedown-extra to capture parsed headers, add a unique slug-id to each for the output
