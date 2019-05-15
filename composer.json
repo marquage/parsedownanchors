@@ -1,0 +1,52 @@
+{
+    "name": "marquage/parsedownanchors",
+    "type": "library",
+    "description": "extends Parsedown-extra to automatically add id anchors with unique slugs",
+    "keywords": [
+        "parsedown-extra",
+        "anchors",
+        "slugify"
+    ],
+    "homepage": "https://github.com/parsedownanchors/parsedownanchors",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farhang E.",
+            "email": "farhang@riseup.net",
+            "homepage": "https://github.com/marquage",
+            "role": "Developer(ish)"
+        }
+    ],
+    "require": {
+        "php": "~7.3",
+        "cocur/slugify": "^3.2",
+        "erusev/parsedown-extra": "^0.7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marquage\\ParsedownAnchors\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Marquage\\ParsedownAnchors\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
